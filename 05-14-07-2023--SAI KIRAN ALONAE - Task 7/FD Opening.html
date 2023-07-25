@@ -1,0 +1,114 @@
+<html>
+    <style>
+        body  {
+          background-size:fill;
+          background-color: #b3b3fc;
+        }
+        </style>
+        <center>
+
+        <body>
+        
+        <h1>Welcome to Fixed Deposits -- ICICI Banking </h1>
+        <div class = PersonalInformation>
+        <h3> Kindly fill in the below details to open a Savings Account and start saving with an FD interest rates starting @ flat 6.75% </h3>
+        </center>
+        
+        <form>
+            Enter Your First Name: <br>
+            <input type  = "text" id = "fname" minlength = "3" maxlength = "15"  style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Last Name: <br> 
+            <input type = "text" id = "lname" minlength = "3" maxlength = "15" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Select Your Gender: <br>
+            <input type = "radio" name = "Gender" value = "Male"> MALE 
+            <br>
+            <input type = "radio" name = "Gender" value = "Female"> FEMALE 
+            <br><br>
+            Select your Date of Birth: <br>
+            <input type = "date"> 
+            <br><br>
+            Enter Your Phone Number linked with Aadhar: <br>
+            <input type = "number" id = "phone" maxlength = "10" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Email Id: <br>
+            <input type = "text" id = "email" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your PAN Card No: <br>
+            <input type = "text" id = "PANCard" minlength = "10" maxlength = "10" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); text-transform:uppercase; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Address: <br>
+            <textarea name = "Address" maxlength = "60"  cols = "70" rows = "10" id = "address" style = "border-radius: 10px; border-color: rgb(143, 134, 220); font-variant:normal; font-style:oblique; border-style: ridge;"></textarea>
+            <br><br>
+            Enter your Pincode: <br>
+            <input type = "number" id = "Pincode" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+            Select your State: <br>
+            <select name = "Select Your State">
+                <option value = "Telangana">Telangana</option>
+                <option value = "Andhra Pradesh">Andhra Pradesh</option>
+                <option value = "Maharashtra">Maharashtra</option>
+                <option value = "Tamil Nadu">Tamil Nadu</option>
+                <option value = "Karnataka">Karnataka</option>
+                <option value = "Kerala">Kerala</option>
+            </select>
+            <br> <br>
+
+            Select your Profession type: <br>
+            <select name = "Profession">
+                <option value = "Government">Government</option>
+                <option value = "Private">Private</option>
+                <option value = "Business">Business</option>
+            </select>
+            <br><br>
+            Enter your Monthly Income: <br>
+            <input type = "number" id = "income" minlength = "5" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br> 
+            Enter your Account Number: <br>
+            <input type = "text" oninput = "numberOnly(this.id);" minlength = "10" maxlength = "18" id = "AccNo" name = "number" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+
+            Enter the amount you want to invest in ICICI FD: <br>
+            <input type = "text" oninput = "numberOnly(this.id);" minlength = "5" maxlength="8" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+
+            Select the Type of FD you want to invest in: <br>
+            <select name = "Type of FD">
+                <option value = "Standard FD">Standard FD @ 6.25%</option>
+                <option value = "Sr. Citizen FD">Sr. Citizen FD @ 7.25%</option>
+                <option value = "Tax Saving FD">Tax Saving FD @ 6.85%</option>
+                <option value = "Regular Income FD">Regular Income FD @ 6.50%</option>
+            </select>
+            <br><br>
+            
+            Select the nature of FD you want to invest in: (This is the period of time for which your FD interest rates are paid) <br>
+            <select name = "Nature of FD">
+                <option value = "Monthly">Monthly</option>
+                <option value = "Qaurterly">Qaurterly</option>
+                <option value = "Half-yearly">Half-yearly</option>
+                <option value = "Annually">Annually</option>
+            </select>
+            <br><br>
+
+            Select the Tenure of FD: <br>
+            <select name = "Tenure of FD">
+                <option value = "1 year">1 year</option>
+                <option value = "2 years">2 years</option>
+                <option value = "3 years">3 years</option>
+                <option value = "4 years">4 years</option>
+                <option value = "5 years">5 years</option>
+                <option value = "6 years">6 years</option>
+                <br><br>
+            </select>
+
+            <br><br>
+
+                <button onclick="document.location = 'FD Application.html'";  class= "Submit" type="reset" style="font-size: large; border-radius: 5px; background-color: #6cfb33d2; color: rgb(157, 62, 78); font-weight:600;">Submit</button>
+                <br><br>
+                <button onclick="document.location = 'Banking (ICICI)--Home page.html'"; class = "Cancel" type="reset" style="font-size: large; border-radius: 5px; background-color: #fb3f26d2; color: rgb(255, 255, 255); font-weight:600;">Cancel Your Application</button>
+    
+
+        </form>
+        </body>
+</html> 

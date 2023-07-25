@@ -1,0 +1,30 @@
+<html>
+    
+<style>
+    body  {
+      background-size:fill;
+      background-color: #b3b3fc;
+    }
+    </style>
+    <center>
+        <body>
+            <h3>Kindly enter the card details to make the payment for Demat Account. The charges are including the service charges.</h3> 
+                
+            Enter your 16 digit Card Number:  <input type = "text" oninput = "numberOnly(this.id);" maxlength="16" id = "Card No" style = "border-radius: 10px; font-size: large; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style:double"/> 
+            <br><br>
+            Enter Card Holder Name:  <input type = "text" minlength="3" maxlength = "30" id = "CardHolderName"  style = "border-radius: 10px; font-size: large; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style:double"> 
+            <br><br>
+            Enter Card Expiry MM/YY:  <input type="month"  id = "card expiry" style = "border-radius: 10px; font-size: large; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style:double"> 
+            <br><br>
+            Enter CVV Code:  <input type="text" oninput = "numberOnly(this.id);" maxlength="3" id = "Card CVV" style="border-radius: 10px; font-size: large; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style:double"> 
+            <br><br>
+            <button onclick="document.location = 'Demat Application.html'";  class= "Submit" type="reset" style="font-size: x-large; border-radius: 5px; background-color: #6cfb33d2; color: rgb(157, 62, 78); font-weight:600;">Make Payment</button>
+
+
+
+
+
+        </body>
+    </center>
+  
+</html>

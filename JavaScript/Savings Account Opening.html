@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style > 
+        body  { 
+        background-color: #b3b3fc;
+        }
+        </style > 
+        <script>
+            function validation(form) { 
+                var fname = form.firstname.value ; 
+                var lname = form.lastname.value ; 
+                var gender = form.gender.value ; 
+                var dob = form.dob.value ; 
+                var phone = form.phone.value ; 
+                var email = form.email.value ; 
+                var PAN = form.PAN.value ; 
+                var address = form.address.value ; 
+                var pin = form.pin.value ; 
+                var state = form.state.value ;
+                var profession = form.profession.value ; 
+                var income = form.income.value ; 
+
+            if(fname.length===0) {
+            alert("You Must Enter Valid First Name " )
+            return false;       }
+            
+            if(lname.length===0) {
+            alert("You Must Enter Valid Last Name " )
+            return false;       }
+
+            if(gender.length===0) {
+            alert("You Must select Gender")
+            return false;       }
+            
+            if(dob.length===0) {
+            alert("You Must Enter Date of Birth")
+            return false;       }
+
+            if(phone.length===0) {
+            alert("You Must Enter Valid Phone")
+            return false;       }
+            
+            if(email.length===0) {
+            alert("You Must Enter Valid Email")
+            return false;       }
+
+            if(PAN.length===0) {
+            alert("You Must Enter Valid PAN Number")
+            return false;       }
+            
+            if(address.length===0) {
+            alert("You Must Enter Valid Address")
+            return false;       }
+
+            if(pin.length===0) {
+            alert("You Must Enter Valid PIN Code")
+            return false;       }
+            
+            if(state==='') {
+            alert("You Must select Valid State")
+            return false;       }
+
+            if(profession==='') {
+            alert("You Must select Valid Profession")
+            return false;       }
+
+            if(income.length===0) {
+            alert("You Must Enter Valid Income")
+            return false;       }
+
+            window.location = 'Savings Account Application.html';
+            return false;
+            }
+        </script>       
+    </head>
+        
+        <body>
+            <center>
+            <h1>Welcome to Savings Account -- ICICI Banking </h1>
+            <div class = PersonalInformation>
+            <h2> Kindly fill in the below details to open a Savings Account and start saving with the interest rates of 6.2% </h2>
+            </center>
+        
+        <form action = "#" method = "post" onsubmit = "return validation(this);">
+            Enter Your First Name :  <br>
+            <input type = "text" minlength="3" maxlength="15" name = "firstname" style = "border-radius: 7px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style : oblique; border-style :  ridge;">
+            <br><br>
+            Enter Your Last Name :  <br> 
+            <input type = "text" minlength="3" maxlength="15" name = "lastname" style = "border-radius: 7px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style : oblique; border-style :  ridge;">
+            <br><br>
+            Select Your Gender: <br>
+            <input type = "radio" name = "gender" value = "Male"> MALE 
+            <br>
+            <input type = "radio" name = "gender" value = "Female"> FEMALE 
+            <br><br>
+            Select your Date of Birth: <br>
+            <input type = "date" name = "dob"> 
+            <br><br>
+            Enter Your Phone Number linked with Aadhar: <br>
+            <input type = "tel" minlength="10" maxlength = "10" name = "phone" style = "border-radius: 7px; border-color: rgba(142, 134, 220, 0.9); font-style : oblique; border-style :  ridge;">
+            <br><br>
+            Enter Your Email Id: <br>
+            <input type = "text" name = "email" style = "border-radius: 7px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style : oblique; border-style :  ridge;">
+            <br><br>
+            Enter Your PAN Card No: <br>
+            <input type = "text" minlength = "10" maxlength="10" name = "PAN" style = "border-radius: 7px; border-color: rgba(142, 134, 220, 0.9); text-transform:uppercase; font-style : oblique; border-style :  ridge;">
+            <br><br>
+            Enter Your Address: <br>
+            <textarea name = "address" maxlength = "60" cols="70" rows = "10" id = "address" style = "border-radius: 7px; border-color: rgb(143, 134, 220); font-variant:normal; font-style : oblique; border-style :  ridge;"></textarea>
+            <br><br>
+            Enter your Pincode: <br>
+            <input type = "tel" name = "pin"  minlength = "6" maxlength = "6" style = "border-radius: 7px; border-color: rgba(142, 134, 220, 0.9); font-style : oblique; border-style :  ridge;">
+            <br><br>
+            Select your State: <br>
+            <select name = "state">
+                <option value = ""></option>
+                <option value = "Telangana">Telangana</option>
+                <option value = "Andhra Pradesh">Andhra Pradesh</option>
+                <option value = "Maharashtra">Maharashtra</option>
+                <option value = "Tamil Nadu">Tamil Nadu</option>
+                <option value = "Karnataka">Karnataka</option>
+                <option value = "Kerala">Kerala</option>
+            </select>
+            <br> <br>
+
+            Select your Profession type :  <br>
+            <select name = "profession">
+                <option value = ""></option>
+                <option value = "Government">Government</option>
+                <option value = "Private">Private</option>
+                <option value = "Business">Business</option>
+            </select>
+            <br><br>
+            Enter your Monthly Income: <br>
+            <input type = "tel" minlength="5" maxlength = "8" name = "income" style = "border-radius: 7px; border-color: rgba(142, 134, 220, 0.9); font-style : oblique; border-style :  ridge;">
+            <br><br> 
+            
+            <p>Kindly click on the below button to submit your Savings Account Application</p>
+
+            <input type = "submit" value = "Submit your Savings Account Application" style   = "font-size: larger; width:fit-content; border-radius: 7px; background-color: green;"> 
+            <br><br>
+
+            <!-- <input type = "submit" 
+                value = "Cancel Application" style = "font-size: larger; width:fit-content; border-radius: 7px; background-color: red;"> <br> -->
+
+        </form>
+        </body>
+</html>

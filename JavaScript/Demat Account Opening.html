@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        body  {
+        background-color: #b3b3fc;
+        }
+        </style>
+        <script>
+            function validation(form) { 
+                var fname = form.firstname.value ; 
+                var lname = form.lastname.value ; 
+                var gender = form.gender.value ; 
+                var dob = form.dob.value ; 
+                var phone = form.phone.value ; 
+                var email = form.email.value ; 
+                var PAN = form.PAN.value ; 
+                var address = form.address.value ; 
+                var pin = form.pin.value ; 
+                var state = form.state.value ; 
+                var income = form.income.value ; 
+                
+                var incomeproof = form.incomeproof.files ; 
+                var bankstatement = form.bankstatement.files ; 
+                var securities = form.securities ;
+                var securitiesSelected = false;
+                for (var i = 0; i < securities.length; i++) {
+                    if (securities[i].checked) {
+                        securitiesSelected = true;
+                        break;
+                    }
+                }
+                if (!securitiesSelected) {
+                    alert("You Must select one or more valid Securities");
+                    return false;
+                }
+
+
+                
+            if(fname.length===0) {
+            alert("You Must Enter Valid First Name")
+            return false;       }
+            
+            if(lname.length===0) {
+            alert("You Must Enter Valid Last Name")
+            return false;       }
+
+            if(gender.length===0) {
+            alert("You Must select Gender")
+            return false;       }
+            
+            if(dob.length===0) {
+            alert("You Must Enter Date of Birth")
+            return false;       }
+
+            if(phone.length===0) {
+            alert("You Must Enter Valid Phone")
+            return false;       }
+            
+            if(email.length===0) {
+            alert("You Must Enter Valid Email")
+            return false;       }
+
+            if(PAN.length===0) {
+            alert("You Must Enter Valid PAN Number")
+            return false;       }
+            
+            if(address.length===0) {
+            alert("You Must Enter Valid Address")
+            return false;       }
+
+            if(pin.length===0) {
+            alert("You Must Enter Valid PIN Code")
+            return false;       }
+            
+            if(state==='') {
+            alert("You Must select Valid state")
+            return false;       }
+
+            if(income.length===0) {
+            alert("You Must Enter Valid Income")
+            return false;       }
+
+            if(!incomeproof.length) {
+            alert("You Must upload valid file format of Income Proof [Supported file formats are: .pdf, .xlxs, .xls, .csv]")
+            return false;       }
+
+            if(!bankstatement.length) {
+            alert("You Must upload valid file format of the Bank Statement [Supported file formats are .pdf, .xlsx, .xls, .csv]")
+            return false;       }
+
+            if(securities==='') {
+            alert("You Must select one or more valid Securities")
+            return false;       }
+            
+            window.location = 'Demat_Account_Payment_Info.html';
+            return false;
+            }
+        </script>       
+    </head>
+
+        <body>
+            <center>
+            <h1> Welcome to DEMAT Account -- ICICI Banking </h1>
+            <div class = PersonalInformation>
+            <h2> Kindly fill in the below details to open an ICICI Demat acccount and start trading and investing in the below securities: </h2>
+            <h4 style = "size:50px; padding: 10px, 30px; background-color: #4796f7; break-inside: auto; font-size: 1.9em; font-weight: 400; border-radius: 7px;"> Mutual Funds & ETFs | Equities & IPOs | Derivatives | Currency & Commodities | Smallcases </h4>
+            </center>
+        
+        <form action = "#" method = "post" onsubmit = "return validation(this);">
+            Enter your First Name: <br>
+            <input type = "text" name = "firstname" minlength = "3" maxlength = "15"  style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter your Last Name: <br> 
+            <input type = "text" name = "lastname" minlength = "3" maxlength = "15" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Select your Gender: <br>
+            <input type = "radio" name = "gender" value = "Male"> MALE 
+            <br>
+            <input type = "radio" name = "gender" value = "Female"> FEMALE 
+            <br><br>
+            Select your Date of Birth: <br>
+            <input type = "date" name = "dob"> 
+            <br><br>
+            Enter your Phone Number linked with Aadhar: <br>
+            <input type = "tel" name = "phone" minlength="10" maxlength = "10" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter your Email name: <br>
+            <input type = "text" name = "email" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter your PAN Card No: <br>
+            <input type = "text" name = "PANCard" maxlength = "10" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); text-transform:uppercase; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter your Address: <br>
+            <textarea name="address" maxlength = "60"  cols = "70" rows = "10" name = "address" style = "border-radius: 10px; border-color: rgb(143, 134, 220); font-variant:normal; font-style:oblique; border-style: ridge;"></textarea>
+            <br><br>
+            Enter your Pincode: <br>
+            <input type = "tel" name = "Pincode"  minlength = "6" maxlength = "6" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+            Select your State: <br>
+            <select name = "state">
+                <option value = ""></option>
+                <option value = "Telangana">Telangana</option>
+                <option value = "Andhra Pradesh">Andhra Pradesh</option>
+                <option value = "Maharashtra">Maharashtra</option>
+                <option value = "Tamil Nadu">Tamil Nadu</option>
+                <option value = "Karnataka">Karnataka</option>
+                <option value = "Kerala">Kerala</option>
+            </select>
+            <br> <br>
+
+            Select your Profession type :  <br>
+            <select name = "profession">
+                <option value = ""></option>
+                <option value = "Government">Government</option>
+                <option value = "Private">Private</option>
+                <option value = "Business">Business</option>
+            </select>
+            <br><br>
+            Enter your Monthly Income: <br>
+            <input type = "tel" name = "income" minlength = "5" maxlength = "8" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br>
+
+            <h4> Click on "Choose File" button to upload your income proof: </h4>
+            <!-- <form action = "/action_page.php"> -->
+            <input type = "file" name = "incomeproof" name = "incomeproof" accept = ".pdf, .xlsx, .xls, .csv">
+            <!-- <input type = "submit"> -->
+            <!-- </form> -->
+
+            <h4> Click on "Choose File" button to upload your six months bank statement: </h4>
+            <!-- <form action = "/action_page.php"> -->
+            <input type = "file" name = "bankstatement" name = "bankstatement" accept = ".pdf, .xlsx, .xls, .csv">
+            <!-- <input type = "submit"> -->
+            <!-- </form> -->
+
+            <h4>From the below types of Securities, you can choose any to invest & trade in: </h4> 
+            <input type = "checkbox" name = "securities" id = "equities" value = "Equities"> Equities  
+            <input type = "checkbox" name = "securities" id = "F&O" value = "Futures & Options"> Futures & Options
+            <input type = "checkbox" name = "securities" id = "securities" value = "Currency & Commodities"> Currency & Commodities
+            <br><br>
+            
+            <p style = "font-weight: 600;">Kindly click on the below button to make the Demat Account Opening Charges</p>
+            
+            <input type = "submit" value = "Submit your Demat Account Application and make Payment" style = "font-size: larger; width:fit-content; border-radius: 7px; background-color: green;"> 
+            <br><br>
+            <!-- <button onclick = "document.location = 'Demat Account Payment  info.html'";  class = "Submit" type = "reset" style = "font-size: large; border-radius: 5px; background-color: #6cfb33d2; color: rgb(157, 62, 78); font-weight:600;">Submit</button>
+            <br><br>
+            <button onclick = "document.location = 'Banking (ICICI)--Home page.html'"; class = "Cancel" type = "reset" style = "font-size: large; border-radius: 5px; background-color: #fb3f26d2; color: rgb(255, 255, 255); font-weight:600;">Cancel your Application</button> -->
+
+        </form>
+        </body>
+</html>

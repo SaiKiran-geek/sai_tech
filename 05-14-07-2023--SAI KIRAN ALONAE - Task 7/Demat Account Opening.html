@@ -1,0 +1,91 @@
+<html>
+    <style>
+        body  {
+          background-size:fill;
+          background-color: #b3b3fc;
+        }
+        </style>
+        <center>
+
+        <body>
+
+            <h1> Welcome to DEMAT Account -- ICICI Banking </h1>
+            <div class = PersonalInformation>
+            <h2> Kindly fill in the below details to open an ICICI Demat acccount and start trading and investing in the below securities: </h2>
+            <h4 style = "size:50px; padding: 10px, 30px; background-color: #4796f7; break-inside: auto; font-size: 1.9em; font-weight: 400; border-radius: 7px;"> Mutual Funds & ETFs | Equities & IPOs | Derivatives | Currency & Commodities | Smallcases </h4>
+        </center>
+        
+        <form>
+            Enter Your First Name: <br>
+            <input type="text" id="fname" minlength="3" maxlength="15"  style="border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Last Name: <br> 
+            <input type="text" id="lname" minlength="3" maxlength="15" style="border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Select Your Gender: <br>
+            <input type="radio" name="Gender" value="Male"> MALE 
+            <br>
+            <input type="radio" name="Gender" value="Female"> FEMALE 
+            <br><br>
+            Select your Date of Birth: <br>
+            <input type="date"> 
+            <br><br>
+            Enter Your Phone Number linked with Aadhar: <br>
+            <input type="number" id="phone" maxlength="10" style="border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Email Id: <br>
+            <input type="text" id="email" style="border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your PAN Card No: <br>
+            <input type="text" id="PANCard" maxlength="10" style="border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); text-transform:uppercase; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Address: <br>
+            <textarea name="Address" maxlength="60"  cols="70" rows="10" id="address" style="border-radius: 10px; border-color: rgb(143, 134, 220); font-variant:normal; font-style:oblique; border-style: ridge;"></textarea>
+            <br><br>
+            Enter your Pincode: <br>
+            <input type="number" id="Pincode" style="border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+            Select your State: <br>
+            <select name="Select Your State">
+                <option value="Telangana">Telangana</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+            </select>
+            <br> <br>
+
+            Select your Profession type: <br>
+            <select name = "Profession">
+                <option value="Government">Government</option>
+                <option value="Private">Private</option>
+                <option value="Business">Business</option>
+            </select>
+            <br><br>
+            Enter your Monthly Income: <br>
+            <input type="number" id="income" minlength="5" style="border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br>
+
+            <h3> Click on "Choose File" button to upload your income proof or six months bank statement: </h3>
+            <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename" >
+            <input type="submit">
+            </form>
+
+            <h3>From the below types of Securities, you can choose any to invest & trade in: </h3> 
+            <h4><input type = "checkbox" name = "Equities" > Equities  
+            <input type = "checkbox" name = "F&O" > Futures & Options
+            <input type = "checkbox" name = "Currency & Commodities" > Currency & Commodities
+            </h4>
+            
+            <p>Kindly click on the below button to make the Demat Account Opening Charges</p>
+            
+            <button onclick="document.location = 'Demat Account Payment  info.html'";  class= "Submit" type="reset" style="font-size: large; border-radius: 5px; background-color: #6cfb33d2; color: rgb(157, 62, 78); font-weight:600;">Submit</button>
+            <br><br>
+            <button onclick="document.location = 'Banking (ICICI)--Home page.html'"; class = "Cancel" type="reset" style="font-size: large; border-radius: 5px; background-color: #fb3f26d2; color: rgb(255, 255, 255); font-weight:600;">Cancel Your Application</button>
+
+
+        </form>
+        </body>
+</html>

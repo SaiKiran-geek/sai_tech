@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        body  {
+        background-color: #b3b3fc;
+        }
+        </style>
+        <script>
+            function validation(form) { 
+                var fname = form.firstname.value;
+                var lname = form.lastname.value;
+                var gender = form.gender.value;
+                var dob = form.dob.value;
+                var phone = form.phone.value;
+                var email = form.email.value;
+                var PAN = form.PAN.value;
+                var address = form.address.value;
+                var pin = form.pin.value;
+                var state = form.state.value;
+                var profession = form.profession.value;
+                var income = form.income.value;
+                var acc_num = form.acc_num.value;
+                var amount = form.amount.value;
+                var FD_Type = form.FD_Type.value;
+                var FD_Nature = form.FD_Nature.value;
+                var FD_Tenure = form.FD_Tenure.value;
+                
+            if(fname.length===0) {
+            alert("You Must Enter Valid First Name")
+            return false;       }
+            
+            if(lname.length===0) {
+            alert("You Must Enter Valid Last Name")
+            return false;       }
+
+            if(gender.length===0) {
+            alert("You Must select Gender")
+            return false;       }
+            
+            if(dob.length===0) {
+            alert("You Must Enter Date of Birth")
+            return false;       }
+
+            if(phone.length===0) {
+            alert("You Must Enter Valid Phone")
+            return false;       }
+            
+            if(email.length===0) {
+            alert("You Must Enter Valid Email")
+            return false;       }
+
+            if(PAN.length===0) {
+            alert("You Must Enter Valid PAN Number")
+            return false;       }
+            
+            if(address.length===0) {
+            alert("You Must Enter Valid Address")
+            return false;       }
+
+            if(pin.length===0) {
+            alert("You Must Enter Valid PIN Code")
+            return false;       }
+            
+            if(state.length===0) {
+            alert("You Must select Valid state")
+            return false;       }
+
+            if(profession.length===0) {
+            alert("You Must select Valid Profession")
+            return false;       }
+
+            if(income.length===0) {
+            alert("You Must Enter Valid Income")
+            return false;       }
+
+            if(acc_num.length===0) {
+            alert("You Must Enter Valid Account Number")
+            return false;       }
+
+            if(amount.length===0) {
+            alert("You Must Enter Valid Amount to invest in FD")
+            return false;       }
+            
+            if(FD_Type.length===0) {
+            alert("You Must select Valid Type of FD")
+            return false;       }
+
+            if(FD_Nature.length===0) {
+            alert("You Must select Valid Nature of FD")
+            return false;       }
+            
+            if(FD_Tenure.length===0) {
+            alert("You Must select Valid Tenure of FD")
+            return false;       }
+
+            window.location = 'FD Application.html';
+            return false;
+            }
+        </script>  
+    </head>     
+
+        <body>
+            <center>
+            <h1>Welcome to Fixed Deposits -- ICICI Banking </h1>
+            <div class = PersonalInformation>
+            <h3> Kindly fill in the below details to open a Savings Account and start saving with an FD interest rates starting @ flat 6.75% </h3>
+            </center>
+        
+        <form action = "#" method="post" onsubmit="return validation(this);">
+            Enter Your First Name: <br>
+            <input type  = "text" name = "firstname" minlength = "3" maxlength = "15"  style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Last Name: <br> 
+            <input type = "text" name = "lastname" minlength = "3" maxlength = "15" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Select Your Gender: <br>
+            <input type = "radio" name = "gender" value = "Male"> MALE 
+            <br>
+            <input type = "radio" name = "gender" value = "Female"> FEMALE 
+            <br><br>
+            Select your Date of Birth: <br>
+            <input type = "date" name = "dob"> 
+            <br><br>
+            Enter Your Phone Number linked with Aadhar: <br>
+            <input type = "number" name = "phone" maxlength = "10" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Email Id: <br>
+            <input type = "text" name = "email" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-variant:normal; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your PAN Card No: <br>
+            <input type = "text" name = "PAN" minlength = "10" maxlength = "10" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); text-transform:uppercase; font-style:oblique; border-style: ridge;">
+            <br><br>
+            Enter Your Address: <br>
+            <textarea name = "address" maxlength = "60"  cols = "70" rows = "10" id = "address" style = "border-radius: 10px; border-color: rgb(143, 134, 220); font-variant:normal; font-style:oblique; border-style: ridge;"></textarea>
+            <br><br>
+            Enter your Pincode: <br>
+            <input type = "number" name = "pin" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+            Select your State: <br>
+            <select name = "state">
+                <option value = "Telangana">Telangana</option>
+                <option value = "Andhra Pradesh">Andhra Pradesh</option>
+                <option value = "Maharashtra">Maharashtra</option>
+                <option value = "Tamil Nadu">Tamil Nadu</option>
+                <option value = "Karnataka">Karnataka</option>
+                <option value = "Kerala">Kerala</option>
+            </select>
+            <br> <br>
+
+            Select your Profession type: <br>
+            <select name = "profession">
+                <option value = "Government">Government</option>
+                <option value = "Private">Private</option>
+                <option value = "Business">Business</option>
+            </select>
+            <br><br>
+            Enter your Monthly Income: <br>
+            <input type = "number" name = "income" minlength = "5" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br> 
+            Enter your Account Number: <br>
+            <input type = "text" name = "acc_num" oninput = "numberOnly(this.id);" minlength = "10" maxlength = "18" id = "AccNo" name = "number" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+
+            Enter the amount you want to invest in ICICI FD: <br>
+            <input type = "text" name = "amount" oninput = "numberOnly(this.id);" minlength = "5" maxlength="8" style = "border-radius: 10px; border-color: rgba(142, 134, 220, 0.9); font-style:oblique; border-style: ridge;">
+            <br><br>
+
+            Select the Type of FD you want to invest in: <br>
+            <select name = "FD_Type">
+                <option value = "Standard FD">Standard FD @ 6.25%</option>
+                <option value = "Sr. Citizen FD">Sr. Citizen FD @ 7.25%</option>
+                <option value = "Tax Saving FD">Tax Saving FD @ 6.85%</option>
+                <option value = "Regular Income FD">Regular Income FD @ 6.50%</option>
+            </select>
+            <br><br>
+            
+            Select the nature of FD you want to invest in: (This is the period of time for which your FD interest rates are paid) <br>
+            <select name = "FD_Nature">
+                <option value = "Monthly">Monthly</option>
+                <option value = "Qaurterly">Qaurterly</option>
+                <option value = "Half-yearly">Half-yearly</option>
+                <option value = "Annually">Annually</option>
+            </select>
+            <br><br>
+
+            Select the Tenure of FD: <br>
+            <select name = "FD_Tenure">
+                <option value = "1 year">1 year</option>
+                <option value = "2 years">2 years</option>
+                <option value = "3 years">3 years</option>
+                <option value = "4 years">4 years</option>
+                <option value = "5 years">5 years</option>
+                <option value = "6 years">6 years</option>
+                <br><br>
+            </select>
+            <br><br>
+
+            <input type = "submit" value="Submit your FD Application" style="font-size: larger; width:fit-content; border-radius: 7px; background-color: green;">
+            <br><br>
+            
+            <!-- <button onclick="document.location = 'FD Application.html'";  class= "Submit" type="reset" style="font-size: large; border-radius: 5px; background-color: #6cfb33d2; color: rgb(157, 62, 78); font-weight:600;">Submit</button>
+                <br><br>
+                <button onclick="document.location = 'Banking (ICICI)--Home page.html'"; class = "Cancel" type="reset" style="font-size: large; border-radius: 5px; background-color: #fb3f26d2; color: rgb(255, 255, 255); font-weight:600;">Cancel Your Application</button>
+     -->
+
+        </form>
+        </body>
+</html> 

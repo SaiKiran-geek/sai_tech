@@ -1,0 +1,128 @@
+<html>
+   <head>
+      <title>Registration Website</title>
+      <style>
+        .PersonalInformation{               
+             height: 470px;
+             width:auto;
+             background-color: rgb(205, 237, 237);
+             text-align:justify;
+            }
+
+
+        .button{
+             text-align: center;
+             background-color: rgb(0, 0, 0);
+             border: none;
+            }
+
+
+        .profilesummary{
+            height: 400px;
+             width:auto;
+             background-color: rgb(205, 237, 237);
+             text-align:justify;
+            }
+
+
+
+        .quit{
+             border: none;
+             background-color:#ce433a ;
+                
+            }
+
+
+        .register{
+             border: none;
+             background-color:#6ec913e1
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration Page</h1>
+        <div class = PersonalInformation>
+        <h2> Enter your Personal Inforamtion</h2>
+        <form>
+            Enter Your First Name: <input type="text">
+            <br>
+            <br>
+            Enter Your Last Name: <input type="text">
+            <br>
+            <br>
+            Enter Your Username: <input type="text">
+            <br>
+            <br>
+            Enter Your Password: <input type="password">
+            <br>
+            <br>
+            Enter Your Phone Number: <input type="number" id="phone">
+            <br>
+            <br>
+            Enter Your Email Id: <input type="text" id="email">
+            <br>
+            <br>
+            Select Your Gender:
+            <input type="radio" name="Gender" value="Male"> Male 
+            <br>
+            <br>
+            <input type="radio" name="Gender" value="Female"> Female 
+            <br>
+            <br>
+            Enter Your Address: <input type="text">
+            <br>
+            <br>
+            Select a State: 
+            <select name="Select Your State">
+                <option value="Telangana">Telangana</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+            </select>
+            <br> <br> <br> <br>
+            
+        <div class = profilesummary>
+            <h2>Enter Your Profile Summary</h2> 
+            <textarea name="Profile_Summary" cols="70" rows="10"></textarea>
+            <br>
+            <br>
+            <h3>Enter Your Educational Details</h3>
+            <table border="3">
+                <tr>
+                    <th>University</th>
+                    <th>Degree</th>
+                    <th>Max. Marks</th>
+                    <th>Secured Marks</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+            </table>
+            <br><br>
+
+            <button class = "register" type="submit">Register</button>
+            <button class = "quit" type="reset" >Reset</button>
+        </form>
+    </body>
+</html>
